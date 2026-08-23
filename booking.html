@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book DesignoHaseeb for logo design, branding, websites, UI UX screens, social media designs, and creative project work."
+    />
+    <title>Book Now | DesignoHaseeb</title>
+    <link rel="icon" type="image/png" href="images/Favicon.png" />
+    <link rel="stylesheet" href="style.css%3Fv=9.css" />
+  </head>
+  <body data-page="booking" id="top">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Haseeb Ahmed home"><img src="images/logo&#32;DesignoHaseebe.png" alt="Haseeb Ahmed" /></a>
+
+      <button class="nav-toggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Open menu">
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav class="site-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <div class="dropdown">
+          <span class="dropdown-trigger">Categories <span class="chevron">&#9662;</span></span>
+          <ul class="dropdown-menu">
+            <li class="nested-dropdown">
+              <a href="portfolio.html%3Ftype=website.html">Website Projects <span class="chevron-right">&raquo;</span></a>
+              <ul class="dropdown-submenu">
+                <li><a href="portfolio.html%3Fcategory=websites.html">Website Design</a></li>
+                <li><a href="portfolio.html%3Fcategory=uiux.html">UI/UX Design</a></li>
+              </ul>
+            </li>
+            <li class="nested-dropdown">
+              <a href="portfolio.html%3Ftype=graphic.html">Graphic Designing <span class="chevron-right">&raquo;</span></a>
+              <ul class="dropdown-submenu">
+                <li><a href="portfolio.html%3Fcategory=logo.html">Logo Design</a></li>
+                <li><a href="portfolio.html%3Fcategory=social-media.html">Social Media Design</a></li>
+                <li><a href="portfolio.html%3Fcategory=htl-brands.html">HTL Brands</a></li>
+                <li><a href="portfolio.html%3Fcategory=branding.html">Branding Designing</a></li>
+                <li><a href="portfolio.html%3Fcategory=tshirt-branding.html">T-Shirt Branding</a></li>
+                <li><a href="portfolio.html%3Fcategory=posters.html">Posters</a></li>
+                <li><a href="portfolio.html%3Fcategory=visiting-cards.html">Visiting Cards</a></li>
+                <li><a href="portfolio.html%3Fcategory=flyers.html">Flyers</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="contact.html">Contact</a>
+        <a class="nav-book-now" href="booking.html">Book Now</a>
+      </nav>
+    </header>
+
+    <main class="booking-page google-form-page">
+      <section class="form-banner" aria-label="Book DesignoHaseeb banner">
+        <div class="form-banner-copy">
+          <span>Book 1:1 Call</span>
+          <h1>Book 1:1 Meeting With Me</h1>
+          <p>Logo Design - Branding - Websites - UI/UX - Social Media Design</p>
+        </div>
+        <img src="images/hero&#32;image.png" alt="DesignoHaseeb meeting banner" />
+      </section>
+
+      <section class="google-form-wrap" aria-labelledby="bookingTitle">
+        <div class="google-form-intro">
+          <h2 id="bookingTitle">Book Meeting</h2>
+          <p>Welcome! Before we start a project, I would love to learn a bit more about your business, your goals, and what you are looking for.</p>
+          <p>This form helps me understand your brand and design needs, see if we are a good fit to work together, and save time so we can focus on solutions.</p>
+          <ul>
+            <li>Fill this form carefully. It takes 2-3 minutes.</li>
+            <li>Share your brand links and project details clearly.</li>
+            <li>After submit, I will contact you as soon as possible.</li>
+          </ul>
+          <p class="google-form-note">Note: This form is only for serious business owners, entrepreneurs, and startups who are ready to take action.</p>
+          <p class="required-note">* Indicates required question</p>
+        </div>
+
+        <form class="booking-form google-form" id="bookingForm">
+          <div class="google-question-card">
+            <label for="bookingEmail">Email <span>*</span></label>
+            <input type="email" id="bookingEmail" name="email" placeholder="Your email address" required />
+          </div>
+
+          <div class="google-question-card">
+            <label for="bookingName">Full Name <span>*</span></label>
+            <input type="text" id="bookingName" name="name" placeholder="Your answer" required />
+          </div>
+
+          <div class="google-question-card">
+            <label for="bookingWhatsapp">Whatsapp No. (with country code) <span>*</span></label>
+            <input type="tel" id="bookingWhatsapp" name="whatsapp" placeholder="Your answer" required />
+          </div>
+
+          <div class="google-question-card">
+            <label for="bookingBrand">Business/Brand Name</label>
+            <input type="text" id="bookingBrand" name="brand" placeholder="Your answer" />
+          </div>
+
+          <div class="google-question-card">
+            <label for="bookingLinks">Website/social media links</label>
+            <input type="text" id="bookingLinks" name="links" placeholder="Your answer" />
+          </div>
+
+          <div class="google-question-card">
+            <label for="bookingBusiness">Tell me briefly about your business / brand.</label>
+            <textarea id="bookingBusiness" name="business" rows="3" placeholder="Your answer"></textarea>
+          </div>
+
+          <fieldset class="google-question-card google-options-card">
+            <legend>What services are you interested in? <span>*</span></legend>
+            <div id="serviceSelectMenu" class="google-service-options"></div>
+          </fieldset>
+
+          <fieldset class="google-question-card google-options-card">
+            <legend>What is your budget for this project? <span>*</span></legend>
+            <label class="google-option"><input type="radio" name="budget" value="Less than $100" required /><span>Less than $100</span></label>
+            <label class="google-option"><input type="radio" name="budget" value="$100 - $300" /><span>$100 - $300</span></label>
+            <label class="google-option"><input type="radio" name="budget" value="$300 - $700" /><span>$300 - $700</span></label>
+            <label class="google-option"><input type="radio" name="budget" value="$700+" /><span>$700+</span></label>
+          </fieldset>
+
+          <fieldset class="google-question-card google-options-card">
+            <legend>How soon are you planning to start? <span>*</span></legend>
+            <label class="google-option"><input type="radio" name="timeline" value="Immediately" required /><span>Immediately</span></label>
+            <label class="google-option"><input type="radio" name="timeline" value="In 2-4 weeks" /><span>In 2-4 weeks</span></label>
+            <label class="google-option"><input type="radio" name="timeline" value="In 1-3 months" /><span>In 1-3 months</span></label>
+            <label class="google-option"><input type="radio" name="timeline" value="Just exploring for now" /><span>Just exploring for now</span></label>
+          </fieldset>
+
+          <fieldset class="google-question-card google-options-card">
+            <legend>Confirmation: <span>*</span></legend>
+            <label class="google-option"><input type="checkbox" name="confirmation" value="I understand this call is to discuss working together and is not a free coaching session." required /><span>I understand this call is to discuss working together and is not a free coaching session.</span></label>
+          </fieldset>
+
+          <div class="google-form-actions">
+            <button class="booking-submit" type="submit">Submit</button>
+            <button class="google-clear" type="reset">Clear form</button>
+          </div>
+          <p class="booking-status" id="bookingStatus" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <h2>Haseeb <span>Ahmed</span></h2>
+        <p>Expert designer and developer crafting premium visual identities, modern websites, and interactive user interfaces using a bold black, white, and maroon signature aesthetic.</p>
+        <div class="footer-contact-info">
+          <span>Email: <a href="mailto:designohaseeb@gmail.com">designohaseeb@gmail.com</a></span>
+          <span>Phone: <a href="tel:03155969383">03155969383</a></span>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3>Project Portfolios</h3>
+        <ul>
+          <li><a href="portfolio.html%3Ftype=website.html">Website Projects</a></li>
+          <li><a href="portfolio.html%3Ftype=graphic.html">Graphic Designing Projects</a></li>
+          <li><a href="portfolio.html%3Fcategory=logo.html">Logo Designs</a></li>
+          <li><a href="portfolio.html%3Fcategory=uiux.html">UI/UX Interfaces</a></li>
+          <li><a href="portfolio.html%3Fcategory=branding.html">Branding Designing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Haseeb Ahmed. All rights reserved.</p>
+        <a href="booking.html#top">Back to top</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js%3Fv=9"></script>
+  </body>
+</html>
