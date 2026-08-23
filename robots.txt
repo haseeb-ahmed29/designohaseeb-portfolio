@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://designohaseeb-portfolio-a414t1ihn-haseeb-ahmed.vercel.app/sitemap.xml
+Sitemap: https://designohaseeb-portfolio.vercel.app/sitemap.xml
