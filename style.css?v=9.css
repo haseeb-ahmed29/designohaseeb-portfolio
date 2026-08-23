@@ -421,17 +421,17 @@ img {
 /* Hero Section: Restored Original Layout, Fonts & Sizes */
 .hero {
   display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  gap: clamp(24px, 5vw, 74px);
   min-height: calc(100vh - 80px);
-  padding: clamp(28px, 5vw, 70px) clamp(18px, 5vw, 72px) 56px;
+  padding: clamp(42px, 8vw, 108px) clamp(18px, 7vw, 96px) clamp(56px, 9vw, 120px);
   background: var(--yellow);
 }
 
 .hero-copy {
-  align-self: end;
-  padding-bottom: clamp(46px, 8vw, 118px);
+  align-self: center;
+  width: min(100%, 1120px);
+  padding-bottom: 0;
   color: var(--white);
   animation: fadeInUp 0.8s ease-out;
 }
@@ -444,9 +444,10 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 0.95;
+  max-width: 1120px;
   letter-spacing: 0.02em;
   text-transform: none;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-copy p {
@@ -2021,7 +2022,7 @@ select {
     font-size: clamp(2.45rem, 13.5vw, 4.1rem);
     line-height: 0.95;
     letter-spacing: 0.01em;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .hero-media {
