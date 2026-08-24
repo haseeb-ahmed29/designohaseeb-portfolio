@@ -378,18 +378,23 @@ function escapeEmailHtml(value) {
 
 async function sendFormEmail(subject, body, replyTo) {
   if (window.location.protocol === "file:") {
-    throw new Error("Email sending needs the backend endpoint. Deploy this project on Vercel, then submit the form from the deployed website URL.");
+    throw new Error("Please submit the form from https://designohaseeb.vercel.app.");
   }
 
-  const response = await fetch("/api/send-email", {
+  // FormSubmit provides the email delivery layer for this static Vercel site.
+  // It supports JSON/AJAX submissions without exposing SMTP credentials in the browser.
+  const response = await fetch("https://formsubmit.co/ajax/designohaseeb@gmail.com", {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      Accept: "application/json"
     },
     body: JSON.stringify({
-      subject: subject,
-      message: body,
-      replyTo: replyTo || bookingEmail
+      _subject: subject,
+      _replyto: replyTo || bookingEmail,
+      _template: "table",
+      _honey: "",
+      message: body
     })
   });
 
@@ -397,11 +402,11 @@ async function sendFormEmail(subject, body, replyTo) {
   try {
     result = await response.json();
   } catch (error) {
-    result = { message: "Email endpoint returned an invalid response." };
+    result = { message: "The email service returned an invalid response." };
   }
 
-  if (!response.ok || !result.ok) {
-    throw new Error(result.message || "Email sending failed from backend endpoint.");
+  if (!response.ok || result.success === false || result.success === "false") {
+    throw new Error(result.message || "Email sending failed. Please try again.");
   }
 
   return "OK";
