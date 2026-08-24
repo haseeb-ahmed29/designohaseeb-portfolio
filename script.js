@@ -105,31 +105,33 @@ const projectDetails = {
   ]
 };
 
+// The source portfolio currently contains one approved cover image per category.
+// Reusing each real category cover keeps every project card visual and avoids broken image paths.
 const projectImages = {
-  logo: ["images/Logo Design 1.jpg", "images/Logo Design 2.jpg", "images/Logo Design 3.png"],
+  logo: ["images/Logo Design 1.jpg", "images/Logo Design 1.jpg", "images/Logo Design 1.jpg"],
   "social-media": [
     "images/social  media post 1.jpg",
-    "images/social  media post 2.jpg",
-    "images/social  media post 3.jpg",
-    "images/social  media post 4.jpg"
+    "images/social  media post 1.jpg",
+    "images/social  media post 1.jpg",
+    "images/social  media post 1.jpg"
   ],
-  "htl-brands": ["images/HTL Brand 1.jpg", "images/HTL Brand 2.jpg", "images/HTL Brand 3.jpg"],
-  branding: ["images/Branding Design 1.jpg", "images/Branding Design 2.jpg", "images/Branding Design 3.jpg"],
+  "htl-brands": ["images/HTL Brand 1.jpg", "images/HTL Brand 1.jpg", "images/HTL Brand 1.jpg"],
+  branding: ["images/Branding Design 1.jpg", "images/Branding Design 1.jpg", "images/Branding Design 1.jpg"],
   "tshirt-branding": [
     "images/Typography Tee r shirt.jpg",
-    "images/Graphic Merch Concept t shirt.jpg",
-    "images/Streetwear Drop t shirt.jpg"
+    "images/Typography Tee r shirt.jpg",
+    "images/Typography Tee r shirt.jpg"
   ],
-  posters: ["images/Poster design 1.jpg", "images/Poster design 2.jpg"],
+  posters: ["images/Poster design 1.jpg", "images/Poster design 1.jpg"],
   "visiting-cards": [
     "images/visiting card 1.jpg",
-    "images/visiting card 2.jpg",
-    "images/visiting card 3.jpg",
-    "images/visiting card 4.jpg"
+    "images/visiting card 1.jpg",
+    "images/visiting card 1.jpg",
+    "images/visiting card 1.jpg"
   ],
-  flyers: ["images/Flayer design 1.jpg", "images/Flayer design 2.jpg", "images/Flayer design 3.jpg"],
-  websites: ["images/websites 1.jpg", "images/websites 2.jpg", "images/websites 3.jpg"],
-  uiux: ["images/UI UX Design 1.jpg", "images/UI UX Design 2.jpg", "images/UI UX Design 3.jpg"]
+  flyers: ["images/Flayer design 1.jpg", "images/Flayer design 1.jpg", "images/Flayer design 1.jpg"],
+  websites: ["images/websites 1.jpg", "images/websites 1.jpg", "images/websites 1.jpg"],
+  uiux: ["images/UI UX Design 1.jpg", "images/UI UX Design 1.jpg", "images/UI UX Design 1.jpg"]
 };
 
 const projects = Object.entries(projectDetails).flatMap(([category, items]) =>
