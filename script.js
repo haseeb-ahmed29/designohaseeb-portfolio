@@ -7,7 +7,7 @@ const categories = {
   "social-media": {
     title: "Social Media Design",
     description:
-      "Premium posts, banners, stories, and campaign visuals for digital platforms.",
+      "Distinct product launch posts, campaign visuals, and social-first creative for digital platforms.",
   },
   "htl-brands": {
     title: "HTL Brands",
@@ -110,10 +110,10 @@ const projectDetails = {
 const projectImages = {
   logo: ["images/Logo Design 1.jpg", "images/Logo Design 2.jpg", "images/Logo Design 3.jpg"],
   "social-media": [
-    "images/social  media post 1.jpg",
-    "images/social  media post 2.jpg",
-    "images/social  media post 3.jpg",
-    "images/social  media post 4.jpg"
+    "images/social media post 2.jpg",
+    "images/social media post 3.jpg",
+    "images/social media post 4.jpg",
+    "images/social media post 5.jpg"
   ],
   "htl-brands": ["images/HTL Brand 1.jpg", "images/HTL Brand 2.jpg", "images/HTL Brand 3.jpg"],
   branding: ["images/Branding Design 1.jpg", "images/Branding Design 2.jpg", "images/Branding Design 3.jpg"],
