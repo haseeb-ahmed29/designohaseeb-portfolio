@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://designohaseeb-portfolio.vercel.app/</loc></url>
-  <url><loc>https://designohaseeb-portfolio.vercel.app/about.html</loc></url>
-  <url><loc>https://designohaseeb-portfolio.vercel.app/services.html</loc></url>
-  <url><loc>https://designohaseeb-portfolio.vercel.app/portfolio.html</loc></url>
-  <url><loc>https://designohaseeb-portfolio.vercel.app/contact.html</loc></url>
-  <url><loc>https://designohaseeb-portfolio.vercel.app/booking.html</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/about.html</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/services.html</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/portfolio.html</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/contact.html</loc></url>
+  <url><loc>https://designohaseeb.vercel.app/booking.html</loc></url>
 </urlset>
